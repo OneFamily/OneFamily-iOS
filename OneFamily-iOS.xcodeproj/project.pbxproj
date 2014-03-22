@@ -13,8 +13,6 @@
 		6DE17F0118DD5CB1005AD8A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DE17EFF18DD5CB1005AD8A8 /* InfoPlist.strings */; };
 		6DE17F0318DD5CB1005AD8A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE17F0218DD5CB1005AD8A8 /* main.m */; };
 		6DE17F0718DD5CB1005AD8A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE17F0618DD5CB1005AD8A8 /* AppDelegate.m */; };
-		6DE17F0A18DD5CB1005AD8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DE17F0818DD5CB1005AD8A8 /* Main.storyboard */; };
-		6DE17F0D18DD5CB1005AD8A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE17F0C18DD5CB1005AD8A8 /* ViewController.m */; };
 		6DE17F0F18DD5CB1005AD8A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE17F0E18DD5CB1005AD8A8 /* Images.xcassets */; };
 		6DE17F1618DD5CB1005AD8A8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE17F1518DD5CB1005AD8A8 /* XCTest.framework */; };
 		6DE17F1718DD5CB1005AD8A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE17EF618DD5CB1005AD8A8 /* Foundation.framework */; };
@@ -44,9 +42,6 @@
 		6DE17F0418DD5CB1005AD8A8 /* OneFamily-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneFamily-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		6DE17F0518DD5CB1005AD8A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DE17F0618DD5CB1005AD8A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6DE17F0918DD5CB1005AD8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6DE17F0B18DD5CB1005AD8A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6DE17F0C18DD5CB1005AD8A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DE17F0E18DD5CB1005AD8A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DE17F1418DD5CB1005AD8A8 /* OneFamily-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneFamily-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE17F1518DD5CB1005AD8A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -114,9 +109,6 @@
 			children = (
 				6DE17F0518DD5CB1005AD8A8 /* AppDelegate.h */,
 				6DE17F0618DD5CB1005AD8A8 /* AppDelegate.m */,
-				6DE17F0818DD5CB1005AD8A8 /* Main.storyboard */,
-				6DE17F0B18DD5CB1005AD8A8 /* ViewController.h */,
-				6DE17F0C18DD5CB1005AD8A8 /* ViewController.m */,
 				6DE17F0E18DD5CB1005AD8A8 /* Images.xcassets */,
 				6DE17EFD18DD5CB1005AD8A8 /* Supporting Files */,
 			);
@@ -230,7 +222,6 @@
 			files = (
 				6DE17F0F18DD5CB1005AD8A8 /* Images.xcassets in Resources */,
 				6DE17F0118DD5CB1005AD8A8 /* InfoPlist.strings in Resources */,
-				6DE17F0A18DD5CB1005AD8A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE17F0D18DD5CB1005AD8A8 /* ViewController.m in Sources */,
 				6DE17F0718DD5CB1005AD8A8 /* AppDelegate.m in Sources */,
 				6DE17F0318DD5CB1005AD8A8 /* main.m in Sources */,
 			);
@@ -280,14 +270,6 @@
 				6DE17F0018DD5CB1005AD8A8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6DE17F0818DD5CB1005AD8A8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DE17F0918DD5CB1005AD8A8 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		6DE17F1E18DD5CB1005AD8A8 /* InfoPlist.strings */ = {
@@ -376,11 +358,13 @@
 		6DE17F2618DD5CB1005AD8A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OneFamily-iOS/OneFamily-iOS-Prefix.pch";
 				INFOPLIST_FILE = "OneFamily-iOS/OneFamily-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,11 +373,13 @@
 		6DE17F2718DD5CB1005AD8A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OneFamily-iOS/OneFamily-iOS-Prefix.pch";
 				INFOPLIST_FILE = "OneFamily-iOS/OneFamily-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +446,7 @@
 				6DE17F2718DD5CB1005AD8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DE17F2818DD5CB1005AD8A8 /* Build configuration list for PBXNativeTarget "OneFamily-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +455,7 @@
 				6DE17F2A18DD5CB1005AD8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
